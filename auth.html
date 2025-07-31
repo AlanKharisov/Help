@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Допомога дідусю Володимиру</title>
+  <style>
+    :root {
+      --main-color: #5a4fcf;
+      --bg-light: #f4f4f8;
+      --text-dark: #222;
+      --text-light: #555;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-light);
+      margin: 0;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 25px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: var(--main-color);
+    }
+
+    .donate-box {
+      background: #fff7e6;
+      border-left: 6px solid #ffc107;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .donate-button {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: var(--main-color);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 17px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .donate-button:hover {
+      background-color: #4337c9;
+    }
+
+    code {
+      background: #fff;
+      padding: 8px 12px;
+      display: inline-block;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .share {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .share button {
+      background-color: var(--main-color);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .share button:hover {
+      background-color: #4337c9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+
+      main {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Допомога моєму дідусю Володимиру</h1>
+    <p>Будинок було зруйновано. Підтримаймо його разом 💔</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Що сталося?</h2>
+      <p>31 липня о 4 ранку був приліт у будинок, в якому живе дідусь Володимир. В результаті:</p>
+      <ul>
+        <li>Повністю згорів під'їзд;</li>
+        <li>Повилітали вікна та заблокувало двері;</li>
+        <li>Майже повністю зруйновано балкон;</li>
+        <li>Знищено меблі, особисті речі та побутову техніку.</li>
+      </ul>
+      <p>Дідусь залишився без необхідних умов для життя. Йому 68 років, і він потребує підтримки небайдужих людей.</p>
+    </section>
+
+    <section class="section">
+      <h2>Фото наслідків</h2>
+      <img src="photo.jpg" alt="Фото зруйнованого будинку">
+      <p><em>Фото після прильоту. Це — реальність, в якій зараз живе дідусь.</em></p>
+    </section>
+
+    <section class="section">
+      <h2>Як допомогти</h2>
+      <div class="donate-box">
+        <p><strong>Ви можете надіслати допомогу за посиланням на Monobank:</strong></p>
+        <a class="donate-button" href="https://send.monobank.ua/jar/6GXJpgtbcs" target="_blank">💛 Задонатити через Monobank</a>
+        <p style="margin-top:15px;">Кожна гривня важлива. Дякуємо за вашу небайдужість 💛</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Питання та відповіді</h2>
+      <p><strong>Чи кошти підуть напряму дідусю?</strong><br>Так, всі кошти переказуються безпосередньо його родичам або опікуну, без посередників.</p>
+      <p><strong>Чим ще можна допомогти?</strong><br>Поширте це посилання серед друзів. Навіть репост — це вже велика підтримка.</p>
+    </section>
+
+    <div class="share">
+      <button onclick="navigator.clipboard.writeText(window.location.href); alert('Посилання скопійовано! Надішліть друзям 🙏')">📢 Скопіювати посилання</button>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 | Сторінку створено для допомоги. Дякуємо за підтримку!
+  </footer>
+
+</body>
+</html>
